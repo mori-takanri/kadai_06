@@ -1,0 +1,329 @@
+@charset "utf-8"
+
+html {
+  height:100%;
+}
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+body{
+  font-family: 'Hiragino Kaku Gothic Pro','Meiryo',sans-serif ;
+  font-size: 15px;
+  color: #333;
+  margin:0;
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom:30px;
+}
+
+p{
+  text-align:center ;
+}
+
+.hr1 {
+  position: relative;
+	height: 3px;
+	border-width: 0;
+	background-color: #00bcd4;
+	background-image: -webkit-linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+	background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+}
+
+.w_inner{
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li{
+  width: 200px;
+  text-align: center;
+  border-right: 1px solid blue;
+}
+.header ul li:first-child{
+  border-left: 1px solid blue;
+
+}
+
+.header_img{
+  text-align: center;  
+  
+}
+
+.CQ{
+  width: 400px;px;
+  margin: bottom 30px;
+
+}
+
+.container_service .service_block{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+ 
+}
+
+h2{
+  padding: 10px;
+
+}
+
+.namaee{
+ background-image: linear-gradient(-60deg, #09f, 50%, #6c3 50%);
+ font-size: 35px;
+ 
+}
+
+.container_service{
+  padding: 10px;
+}
+
+
+.tyusin{
+  width: 380px;
+  height: 182px;
+ 
+}
+
+
+
+.container_service .service{
+  width: 380px;
+  text-align: center;
+}
+
+.container_service h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.container_service .service img{
+  margin-bottom: 20px;
+}
+
+.container_service .service .ttl{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.container_service .service .explain{
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.container_service .service a{
+  background: rgba(255, 166, 0, 0.815);
+  color: black;
+  padding: 15px 20px 12px;
+
+}
+
+.footer{
+  margin-top: 40px;
+}
+
+.pp_link{
+  text-align: right;
+}
+
+.copy{
+  text-align: center;
+  background: #79a1b1;
+  color: #fff;
+  font-size: 12px;
+  padding: 7px 0 3px;
+}
+
+.contact-ttl{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contact-ttl{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-item,
+.contact-body {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-item {
+  text-align: left; 
+  width: 30%; 
+  background-color: rgba(255, 166, 0, 0.82); 
+}
+
+.contact-body {
+  width: 70%; 
+}
+
+.form-text {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 166, 0, 0.491);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  max-width: 400px;
+}
+
+.contact-sex + .contact-sex {
+  margin-left: 10px;
+}
+
+.contact-sex-txt {
+  margin-left: 5px;
+}
+
+.form-select {
+  width: 180px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-skill {
+  display: block;
+}
+
+.contact-skill + .contact-skill {
+  margin-top: 10px;
+}
+
+.contact-skill-txt {
+  margin-left: 5px;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact-submit {
+  width: 250px; 
+  background-color: rgba(255, 166, 0, 0.826); 
+  color: black; 
+  font-weight: bold; 
+  display: block; 
+  margin: 0 auto; 
+  font-size: 16px; 
+  padding: 15px; 
+  border-radius: 100vh; /* 角丸指定 */
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
